@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(hot.jpg) no-repeat center/cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.hot {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(hot.jpg) no-repeat center/cover;
+}
+
+body.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(cold.png) no-repeat center/cover;
+
+}
+
+.main {
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot .main {
+    background-image: url(hot.jpg);
+}
+
+.cold .main  {
+    background-image: url(cold.png);
+
+}
+
+.header {
+    margin: 20px;
+    height: 50px;
+    width: 300px;
+}
+
+.header input {
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    border-radius: 8px 0 ;
+    color: black;
+    font-size: 20px;
+    transition: 0.2s;
+    box-shadow: 0 5px 4px rgb(0 0 0 / 20%);
+}
+
+.header input:focus {
+    opacity: 1;
+    border-radius: 0 8px;
+}
+
+.place {
+    margin: 20px;
+}
+
+.place-name {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+
+.place-time {
+    text-align: center;
+    color: white;
+}
+
+.temperature {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+    align-items: center;
+    text-shadow: 4px 4px rgb(0 0 0 / 60%);
+    box-shadow: 2px 2px 0 2px rgb(0 0 0 / 50%);
+    font-size: 48px;
+    font-weight: 1000;
+    color: white;
+    border-radius: 8px;
+    
+}
+
+.temperature sup {
+    font-size: 22px;
+    vertical-align: super;
+}
+
+.weather {
+    margin: 30px;
+}
+
+.main-weather {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px rgb(0 0 0 / 40%);
+    text-align: center;
+    margin: 12px;
+}
+
+.weather-status {
+    display: flex;
+}
+
+.weather-status > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 18px;
+    color: white;
+}
+
+.weather-status > div > span {
+    margin-top: 12px;
+    font-size: 16px;
+} 
